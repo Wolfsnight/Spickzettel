@@ -1,0 +1,2801 @@
+<!DOCTYPE html>
+
+<html>
+
+<!--  Head:  --------------------------------------------->
+<head>
+
+	<!--  Charset:  -->
+	<meta charset="UTF-8" />
+
+	<!--  Viewport  -->
+	<meta
+		name="viewport"
+		content="width=device-width"
+	/>
+
+	<!--  Titer der Webseite:  -->
+	<title>Mein ultimativer Spickzettel</title>
+
+	<!--  CSS:  -->
+	<link
+		rel="stylesheet"
+		href="assets/styles/style.css"
+	>
+
+</head>
+
+<body>
+
+	<!--  Header:  --------------------------------------->
+	<header>
+		<h1>Mein ultimativer HTML Spickzettel</h1>
+
+		<nav>
+			<ul>
+				<li>
+					<a href="#root">Grundelementen</a>
+				</li>
+
+				<li>
+					<a href="#head">Metaelementen</a>
+				</li>
+
+				<li>
+					<a href="#container">Container</a>
+				</li>
+
+				<li>
+					<a href="#text">Text</a>
+				</li>
+
+				<li>
+					<a href="#text_form">Textformat</a>
+				</li>
+
+				<li>
+					<a href="#text_container">Text - Container</a>
+				</li>
+
+				<li>
+					<a href="#liste">Liste</a>
+				</li>
+
+				<li>
+					<a href="#tabelle">Tabelle</a>
+				</li>
+
+				<li>
+					<a href="#formular">Formular</a>
+				</li>
+
+				<li>
+					<a href="#unbekannt">Nicht Bekannt</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<!--  Main:  ------------------------------------------->
+	<main>
+
+		<!--  Root:  ----------------------------------------->
+		<section
+			class="root"
+			id="root"
+		>
+
+			<h2>Die Grundelementen:</h2>
+
+			<table>
+				<thead>
+					<tr>
+						<th class="tag">
+							Tag:
+						</th>
+
+						<th class="name">
+							Bezeichnung:
+						</th>
+
+						<th class="description">
+							Beschreibung:
+						</th>
+
+						<th class="link">
+							Link:
+						</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<!--  HTML Deklaration: -->
+					<tr>
+						<td>
+							<code>
+								&lt;!Doctype html&gt;
+							</code>
+						</td>
+						<td>HTML Deklaration</td>
+						<td>
+							Gibt die Datei als HTML-Datei an.
+						</td>
+						<td class="center">
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  HTML: -->
+					<tr>
+						<td>
+							<code>
+								&lt;html&gt;
+							</code>
+						</td>
+						<td>Wurzel Element</td>
+						<td>
+							Ist das Stammelement, alle anderen Elemente müssen
+							Nachkommen
+							dieses Elements sein.
+						</td>
+						<td class="center">
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Head: -->
+					<tr>
+						<td>
+							<code>
+								&lt;head&gt;
+							</code>
+						</td>
+						<td>Das "Kopf" Element</td>
+						<td>
+							Beinhaltet die maschinenlesbare Informationen (
+							Metadaten ) über
+							das Dokument, wie
+							Titel , Skripte und Stylesheets
+						</td>
+						<td class="center">
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Body: -->
+					<tr>
+						<td>
+							<code>
+								&lt;body&gt;
+							</code>
+						</td>
+						<td>Das "Body" Element</td>
+						<td>
+							Das Element repräsentiert den Inhalt eines
+							HTML-Dokuments.
+						</td>
+						<td class="center">
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+
+				</tbody>
+			</table>
+		</section>
+
+		<!--  Head - Elementen:  ----------------------------------------->
+		<section
+			class="head"
+			id="head"
+		>
+
+			<h2>Die Elementen im Headbereich:</h2>
+
+			<table>
+				<thead>
+					<tr>
+						<th class="tag">
+							Tag:
+						</th>
+
+						<th class="name">
+							Bezeichnung:
+						</th>
+
+						<th class="description">
+							Beschreibung:
+						</th>
+
+						<th class="link">
+							Link:
+						</th>
+					</tr>
+				</thead>
+
+				<tbody>
+
+					<!--  Titel: -->
+					<tr>
+						<td>
+							<code>
+								&lt;titel&gt;
+							</code>
+						</td>
+						<td>Titel der Webseite</td>
+						<td>
+							Das Element definiert den Titel des Dokuments, der
+							in der
+							Titelleiste eines Browsers oder auf der
+							Registerkarte einer Seite
+							angezeigt wird.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Meta: -->
+					<tr>
+						<td>
+							<code>
+								&lt;meta&gt;
+							</code>
+						</td>
+						<td>Metadaten</td>
+						<td>
+							Das Element stellt Metadaten dar, die nicht durch
+							andere
+							metabezogene HTML-Elemente wie &lt;base&gt;,
+							&lt;link&gt;,
+							&lt;script&gt;, &lt;style&gt; oder &lt;title&gt;
+							dargestellt
+							werden können.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Link: -->
+					<tr>
+						<td>
+							<code>
+								&lt;link&gt;
+							</code>
+						</td>
+						<td>Das „External Resource Link“.</td>
+						<td>
+							Das Element gibt Beziehungen zwischen dem aktuellen
+							Dokument und
+							einer externen Ressource an.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Base: -->
+					<tr>
+						<td>
+							<code>
+								&lt;base&gt;
+							</code>
+						</td>
+						<td>Der Dokumentbasis-Link</td>
+						<td>
+							Das Element gibt die Basis-URL an, die für alle
+							relativen URLs in
+							einem Dokument verwendet werden soll.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Script: -->
+					<tr>
+						<td>
+							<code>
+								&lt;script&gt;
+							</code>
+						</td>
+						<td>Script Informationen einbetten</td>
+						<td>
+							Das Element wird zum Einbetten von ausführbarem Code
+							oder Daten
+							verwendet.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Style: -->
+					<tr>
+						<td>
+							<code>
+								&lt;style&gt;
+							</code>
+						</td>
+						<td>CSS Informationen einbetten</td>
+						<td>
+							Das Element enthält Stilinformationen für ein
+							Dokument oder einen
+							Teil eines Dokuments.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</section>
+
+		<!--  Container:  ------------------------------------>
+		<section
+			class="container"
+			id="container"
+		>
+
+			<h2>Container:</h2>
+
+			<table>
+				<thead>
+					<tr>
+						<th class="tag">
+							Tag:
+						</th>
+
+						<th class="name">
+							Bezeichnung:
+						</th>
+
+						<th class="description">
+							Beschreibung:
+						</th>
+
+						<th class="link">
+							Link:
+						</th>
+					</tr>
+				</thead>
+
+				<tbody>
+
+					<!--  Div: -->
+					<tr>
+						<td>
+							<code>
+								&lt;div&gt;
+							</code>
+						</td>
+						<td>Container (Block)</td>
+						<td>
+							"Div" ist der generische Container für Flow-Inhalte.
+							Es hat keine Auswirkung auf den Inhalt oder das
+							Layout, bis es auf
+							irgendeine Weise mit CSS formatiert wird.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"
+								target="_blank"
+							>
+								Mozilla- MDN
+							</a>
+						</td>
+					</tr>
+
+					<!--  Section: -->
+					<tr>
+						<td>
+							<code>
+								&lt;section&gt;
+							</code>
+						</td>
+						<td>Sektion</td>
+						<td>
+							"Section" stellt einen generischen eigenständigen
+							Abschnitt eines
+							Dokuments dar, der über kein spezifischeres
+							semantisches Element
+							zu seiner Darstellung verfügt.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section"
+								target="_blank"
+							>
+								Mozilla- MDN
+							</a>
+						</td>
+					</tr>
+
+					<!--  Header: -->
+					<tr>
+						<td>
+							<code>
+								&lt;header&gt;
+							</code>
+						</td>
+						<td>Die Kopfzeile</td>
+						<td>
+							"Header" stellt einführende Inhalte dar,
+							typischerweise eine
+							Gruppe von Einführungs- oder Navigationshilfen.
+							Es kann einige Überschriftenelemente, aber auch ein
+							Logo, ein
+							Suchformular, einen Autorennamen und andere Elemente
+							enthalten.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header"
+								target="_blank"
+							>
+								Mozilla- MDN
+							</a>
+						</td>
+					</tr>
+
+					<!--  Main: -->
+					<tr>
+						<td>
+							<code>
+								&lt;main&gt;
+							</code>
+						</td>
+						<td>Die Hauptzeile</td>
+						<td>
+							"Main" stellt den dominanten Inhalt eines Dokuments
+							dar.
+							Der Hauptinhaltsbereich besteht aus Inhalten, die in
+							direktem
+							Zusammenhang mit dem zentralen Thema eines Dokuments
+							oder der
+							zentralen Funktionalität einer Anwendung stehen oder
+							dieses
+							erweitern.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main"
+								target="_blank"
+							>
+								Mozilla- MDN
+							</a>
+						</td>
+					</tr>
+
+					<!--  ASide: -->
+					<tr>
+						<td>
+							<code>
+								&lt;aside&gt;
+							</code>
+						</td>
+						<td>Die Seitenzeile</td>
+						<td>
+							"ASide" stellt einen Teil eines Dokuments dar,
+							dessen Inhalt nur
+							indirekt mit dem Hauptinhalt des Dokuments
+							zusammenhängt.
+							Beilagen werden häufig als Seitenleisten oder
+							Hinweisboxen
+							dargestellt.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside"
+								target="_blank"
+							>
+								Mozilla- MDN
+							</a>
+						</td>
+					</tr>
+
+					<!--  Footer: -->
+					<tr>
+						<td>
+							<code>
+								&lt;footer&gt;
+							</code>
+						</td>
+						<td>Die Fußzeile</td>
+						<td>
+							"Footer" stellt eine Fußzeile für den
+							Abschnittsinhalt oder das
+							Abschnittsstammelement seines nächsten Vorgängers
+							dar.
+							Es enthält typischerweise Informationen über den
+							Autor des
+							Abschnitts, Copyright-Daten oder Links zu verwandten
+							Dokumenten.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer"
+								target="_blank"
+							>
+								Mozilla- MDN
+							</a>
+						</td>
+					</tr>
+
+					<!--  Article: -->
+					<tr>
+						<td>
+							<code>
+								&lt;article&gt;
+							</code>
+						</td>
+						<td>Der Artikel</td>
+						<td>
+							"Article" stellt eine eigenständige Komposition in
+							einem Dokument,
+							einer Seite, einer Anwendung oder einer Site dar,
+							die unabhängig
+							verteilbar oder wiederverwendbar sein soll.
+							Beispiele hierfür sind: ein Forumsbeitrag, ein
+							Zeitschriften- oder
+							Zeitungsartikel oder ein Blogeintrag.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article"
+								target="_blank"
+							>
+								Mozilla- MDN
+							</a>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</section>
+
+		<!-- Textausgabe:  ----------------------------------------->
+		<section
+			class="text"
+			id="text"
+		>
+
+			<h2>Textausgabe:</h2>
+
+			<table width="100%">
+				<thead>
+					<tr>
+						<th width="20%">
+							Tag:
+						</th>
+
+						<th width="20%">
+							Bezeichnung:
+						</th>
+
+						<th width="50%">
+							Beschreibung:
+						</th>
+
+						<th width="10%">
+							Link:
+						</th>
+					</tr>
+				</thead>
+
+				<tbody>
+
+					<!--  Link: -->
+					<tr class="a">
+						<td>
+							<code>
+								&lt;a&gt;
+							</code>
+						</td>
+						<td>Link</td>
+						<td>
+							&lt;a&gt; erstellt mit seinem Attribut einen Hyperlink zu
+							Webseiten, Dateien, E-Mail-Adressen, Speicherorten auf derselben
+							Seite oder allem anderen, was eine URL ansprechen kann.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Abkürzung: -->
+					<tr class="abbr">
+						<td>
+							<code>
+								&lt;abbr&gt;
+							</code>
+						</td>
+						<td>Abkürzung</td>
+						<td>
+							&lt;abbr&gt; stellt eine Abkürzung oder ein Akronym dar.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Aufmerksamskeit: -->
+					<tr class="b">
+						<td>
+							<code>
+								&lt;b&gt;
+							</code>
+						</td>
+						<td>Aufmerksamskeit</td>
+						<td>
+							&lt;b&gt; dient dazu, die Aufmerksamkeit des Lesers auf den Inhalt
+							des
+							Elements zu lenken,
+							dem sonst keine besondere Bedeutung beigemessen wird.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Bidirektionale Textüberschreibung: -->
+					<tr class="bdo">
+						<td>
+							<code>
+								&lt;bdo&gt;
+							</code>
+						</td>
+						<td>Bidirektionale Textüberschreibungs</td>
+						<td>
+							&lt;bdo&gt; überschreibt die aktuelle Textrichtung, sodass der
+							darin
+							enthaltene Text in eine
+							andere Richtung gerendert wird.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Medienangebe: -->
+					<tr class="cite">
+						<td>
+							<code>
+								&lt;cite&gt;
+							</code>
+						</td>
+						<td>Medienangabe</td>
+						<td>
+							&lt;cite&gt; wird verwendet, um den Titel einer zitierten
+							kreativen
+							Arbeit auszuzeichnen.
+							Die Referenz kann entsprechend den kontextgerechten Konventionen
+							in Bezug auf Zitatmetadaten in abgekürzter Form erfolgen.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Inline-Code: -->
+					<tr class="code">
+						<td>
+							<code>
+								&lt;code&gt;
+							</code>
+						</td>
+						<td>Inline-Code</td>
+						<td>
+							&lt;code&gt; zeigt seinen Inhalt so an, dass er darauf hinweist,
+							dass es
+							sich bei dem Text um ein kurzes Fragment eines Computercodes
+							handelt.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Gelöscht: -->
+					<tr class="del">
+						<td>
+							<code>
+								&lt;del&gt;
+							</code>
+						</td>
+						<td>Gelöscht</td>
+						<td>
+							&lt;del&gt; stellt einen Textbereich dar, der aus einem Dokument
+							gelöscht wurde.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Definition:  -->
+					<tr class="dfn">
+						<td>
+							<code>
+								&lt;dfn&gt;
+							</code>
+						</td>
+						<td>Definition</td>
+						<td>
+							&lt;dfn&gt; wird verwendet, um den Begriff anzugeben, der im
+							Kontext
+							einer Definitionsphrase oder eines Definitionssatzes definiert
+							wird.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Betont: -->
+					<tr class="em">
+						<td>
+							<code>
+								&lt;em&gt;
+							</code>
+						</td>
+						<td>Betont</td>
+						<td>
+							&lt;em&gt; markiert Text mit Betonung.
+							Das Element kann verschachtelt werden, wobei jede
+							Verschachtelungsebene einen stärkeren Schwerpunkt anzeigt.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Überschriften: -->
+					<tr class="h1">
+						<td>
+							<code>
+								&lt;h1&gt; - &lt;h6&gt;
+							</code>
+						</td>
+						<td>Überschriften:</td>
+						<td>
+							&lt;h1&gt; - &lt;h6&gt; stellen sechs Ebenen von
+							Abschnittsüberschriften dar.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Idiomatisch / Kursiv: -->
+					<tr class="i">
+						<td>
+							<code>
+								&lt;i&gt;
+							</code>
+						</td>
+						<td>Idiomatisch / Kursiv:</td>
+						<td>
+							&lt;i&gt; stellt einen Textbereich dar, der sich aus irgendeinem
+							Grund vom normalen Text abhebt, z. B. idiomatischer Text,
+							Fachbegriffe, taxonomische Bezeichnungen usw.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Eingefügt: -->
+					<tr class="ins">
+						<td>
+							<code>
+								&lt;ins&gt;
+							</code>
+						</td>
+						<td>Eingefügt</td>
+						<td>
+							&lt;ins&gt; stellt einen Textbereich dar, der einem Dokument
+							hinzugefügt wurde.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Tastatureingabe: -->
+					<tr class="kbd">
+						<td>
+							<code>
+								&lt;kbd&gt;
+							</code>
+						</td>
+						<td>Tastatureingabe</td>
+						<td>
+							&lt;kbd&gt; stellt einen Bereich von Inline-Text dar, der
+							textuelle Benutzereingaben über eine Tastatur, Spracheingabe
+							oder ein anderes Texteingabegerät kennzeichnet.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Text - Markieren: -->
+					<tr class="mark">
+						<td>
+							<code>
+								&lt;mark&gt;
+							</code>
+						</td>
+						<td>Markieren</td>
+						<td>
+							&lt;mark&gt; stellt Text dar, der aufgrund der Relevanz der
+							markierten Passage im umschließenden Kontext zu Referenz oder
+							Notationszwecken markiert oder hervorgehoben wird.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Noscript: -->
+					<tr class="noscript">
+						<td>
+							<code>
+								&lt;noscript&gt;
+							</code>
+						</td>
+						<td>Noscript</td>
+						<td>
+							&lt;noscript&gt; definiert einen HTML-Abschnitt, der eingefügt
+							wird, wenn ein Skripttyp auf der Seite nicht unterstützt wird oder
+							wenn die Skripterstellung derzeit im Browser deaktiviert ist.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Paragraph / Absatz: -->
+					<tr class="p">
+						<td>
+							<code>
+								&lt;p&gt;
+							</code>
+						</td>
+						<td>Paragraph / Absatz</td>
+						<td>
+							&lt;p&gt; stellt einen Absatz dar.
+							Absätze werden in visuellen Medien normalerweise als
+							Textblöcke dargestellt, die durch Leerzeilen und/oder Einrückungen
+							in der ersten Zeile von benachbarten Blöcken getrennt sind.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Text - Vorformatierter Text: -->
+					<tr class="pre">
+						<td>
+							<code>
+								&lt;pre&gt;
+							</code>
+						</td>
+						<td>Vorformatierter Text</td>
+						<td>
+							&lt;pre&gt; stellt vorformatierten Text dar, der genau so
+							dargestellt werden soll, wie er in der HTML-Datei geschrieben ist.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Zitat (Inline): -->
+					<tr class="q">
+						<td>
+							<code>
+								&lt;q&gt;
+							</code>
+						</td>
+						<td>Zitat (Inline)</td>
+						<td>
+							&lt;q&gt; gibt an, dass es sich bei dem eingeschlossenen Text um
+							ein kurzes
+							Inline-Zitat handelt.
+							Dieses Element ist für kurze Zitate gedacht, die keine
+							Absatzumbrüche erfordern.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Durchgestrichen: -->
+					<tr class="s">
+						<td>
+							<code>
+								&lt;s&gt;
+							</code>
+						</td>
+						<td>Durchgestrichen</td>
+						<td>
+							&lt;s&gt; stellt den Text durchgestrichen dar.
+							Verwenden Sie das Element, um Dinge darzustellen, die nicht mehr
+							relevant oder nicht mehr korrekt sind.
+							Ist jedoch nicht geeignet, wenn es um die Angabe von
+							Dokumentänderungen geht.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Beispielausgabe: -->
+					<tr class="samp">
+						<td>
+							<code>
+								&lt;samp&gt;
+							</code>
+						</td>
+						<td>Beispielausgabe</td>
+						<td>
+							&lt;samp&gt; wird verwendet, um Inline-Text einzuschließen, der
+							eine Beispielausgabe (oder zitierte Ausgabe) eines
+							Computerprogramms darstellt.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Seitenkommentar: -->
+					<tr class="small">
+						<td>
+							<code>
+								&lt;small&gt;
+							</code>
+						</td>
+						<td>Seitenkommentar</td>
+						<td>
+							&lt;small&gt; stellt Nebenkommentare und Kleingedrucktes wie
+							Urheberrechts- und Rechtstexte dar, unabhängig von der
+							stilisierten Darstellung.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Container (Inline): -->
+					<tr class="span">
+						<td>
+							<code>
+								&lt;span&gt;
+							</code>
+						</td>
+						<td>Container (Inline)</td>
+						<td>
+							&lt;span&gt; ist ein generischer Inline-Container zur Formulierung
+							von Inhalten, der
+							grundsätzlich nichts darstellt.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Starke Wichtigkeit: -->
+					<tr class="strong">
+						<td>
+							<code>
+								&lt;strong&gt;
+							</code>
+						</td>
+						<td>Starke Wichtigkeit</td>
+						<td>
+							&lt;strong&gt; eist darauf hin, dass sein Inhalt von großer
+							Bedeutung, Ernsthaftigkeit oder Dringlichkeit ist.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Tiefgestellt: -->
+					<tr class="sub">
+						<td>
+							<code>
+								&lt;sub&gt;
+							</code>
+						</td>
+						<td>Tiefgestellt</td>
+						<td>
+							&lt;sub&gt; gibt ein Inline-Text an, der ausschließlich aus
+							typografischen Gründen tiefgestellt angezeigt werden soll.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Hochgestellt: -->
+					<tr class="sup">
+						<td>
+							<code>
+								&lt;sup&gt;
+							</code>
+						</td>
+						<td>Hochgestellt</td>
+						<td>
+							&lt;sup&gt; gibt ein Inline-Text an, der aus rein typografischen
+							Gründen hochgestellt angezeigt werden soll.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Zeit/Datum: -->
+					<tr class="time">
+						<td>
+							<code>
+								&lt;time&gt;
+							</code>
+						</td>
+						<td>Zeit / Datum</td>
+						<td>
+							&lt;time&gt; repräsentiert einen bestimmten Zeitraum.
+							Es kann das Attribut enthalten, Datumsangaben in ein
+							maschinenlesbares Format zu übersetzen, was bessere
+							Suchmaschinenergebnisse oder benutzerdefinierte Funktionen wie
+							Erinnerungen ermöglicht.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Unterstrichen: -->
+					<tr class="u">
+						<td>
+							<code>
+								&lt;u&gt;
+							</code>
+						</td>
+						<td>Unterstrichen</td>
+						<td>
+							&lt;u&gt; stellt einen Bereich von Inline-Text dar, der so
+							gerendert werden sollte, dass er eine nicht-textuelle Anmerkung
+							enthält.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Variable: -->
+					<tr class="var">
+						<td>
+							<code>
+								&lt;var&gt;
+							</code>
+						</td>
+						<td>Variable</td>
+						<td>
+							&lt;var&gt; stellt den Namen einer Variablen in einem
+							mathematischen Ausdruck oder einem Programmierkontext dar.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+
+				</tbody>
+			</table>
+		</section>
+
+		<!--  Textformat:  ----------------------------------------->
+		<section
+			class="text_form"
+			id="text_form"
+		>
+
+			<h2>Textformat:</h2>
+
+			<table width="100%">
+				<thead>
+					<tr>
+						<th width="20%">
+							Tag:
+						</th>
+
+						<th width="20%">
+							Bezeichnung:
+						</th>
+
+						<th width="50%">
+							Beschreibung:
+						</th>
+
+						<th width="10%">
+							Link:
+						</th>
+					</tr>
+				</thead>
+
+				<tbody>
+
+					<!--  Zeilenumbruch: -->
+					<tr class="br">
+						<td>
+							<code>
+								&lt;br&gt;
+							</code>
+						</td>
+						<td>Zeilenumbruch</td>
+						<td>
+							&lt;br&gt; erzeugt einen Zeilenumbruch im Text.
+							Es eignet sich zum Schreiben eines Gedichts oder einer Ansprache,
+							bei der die Zeilenteilung von Bedeutung ist.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Thematischer Bruch: -->
+					<tr class="hr">
+						<td>
+							<code>
+								&lt;hr&gt;
+							</code>
+						</td>
+						<td>Thematischer Bruch</td>
+						<td>
+							&lt;hr&gt; stellt einen thematischen Bruch zwischen Elementen auf
+							Absatzebene dar.
+							Zum Beispiel einen Szenenwechsel in einer Geschichte oder einen
+							Themenwechsel innerhalb eines Abschnitts.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Wortumbruch: -->
+					<tr class="wbr">
+						<td>
+							<code>
+								&lt;wbr&gt;
+							</code>
+						</td>
+						<td>Wortumbruch</td>
+						<td>
+							&lt;wbr&gt; stellt eine Wortumbruchmöglichkeit dar, wo der
+							Browser optional eine Zeile umbrechen kann, obwohl seine
+							Zeilenumbruchregeln andernfalls keinen Umbruch an dieser Stelle
+							erzeugen würden.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+
+
+
+
+
+				</tbody>
+			</table>
+		</section>
+
+		<!--  Text - Container:  ----------------------------------------->
+		<section
+			class="text_container"
+			id="text_container"
+		>
+
+			<h2>Text - Container:</h2>
+
+			<table width="100%">
+				<thead>
+					<tr>
+						<th width="20%">
+							Tag:
+						</th>
+
+						<th width="20%">
+							Bezeichnung:
+						</th>
+
+						<th width="50%">
+							Beschreibung:
+						</th>
+
+						<th width="10%">
+							Link:
+						</th>
+					</tr>
+				</thead>
+
+				<tbody>
+
+					<!--  Kontaktadresse: -->
+					<tr class="address">
+						<td>
+							<code>
+								&lt;address&gt;
+							</code>
+						</td>
+						<td>Kontaktadresse</td>
+						<td>
+							&lt;address&gt; gibt an, dass der eingeschlossene HTML-Code
+							Kontaktinformationen für eine oder mehrere Personen oder eine
+							Organisation bereitstellt.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Zitat (Block): -->
+					<tr class="blockquote">
+						<td>
+							<code>
+								&lt;blockquote&gt;
+							</code>
+						</td>
+						<td>Zitat (Block)</td>
+						<td>
+							&lt;blockquote&gt; gibt an, dass es sich bei dem eingeschlossenen
+							Text um ein erweitertes Zitat handelt. Normalerweise wird dies
+							visuell durch Einrückung dargestellt.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Detailansicht: -->
+					<tr class="details">
+						<td>
+							<code>
+								&lt;details&gt;
+							</code>
+						</td>
+						<td>Detailansicht</td>
+						<td>
+							&lt;details&gt; erstellt ein Offenlegungs-Widget, in dem
+							Informationen nur sichtbar sind, wenn das Widget in den „offenen“
+							Zustand versetzt wird.
+							Über das Element muss eine Zusammenfassung oder Beschriftung
+							bereitgestellt werden.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Gruppierung: -->
+					<tr class="hgroup">
+						<td>
+							<code>
+								&lt;hgroup&gt;
+							</code>
+						</td>
+						<td>Gruppierung</td>
+						<td>
+							&lt;hgroup&gt; stellt eine Überschrift und zugehörigen Inhalt dar.
+							Es gruppiert ein einzelnes Element mit einem oder mehreren .
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+
+					<!--  Offenlegungs Zusammenfassung: -->
+					<tr class="summary">
+						<td>
+							<code>
+								&lt;summary&gt;
+							</code>
+						</td>
+						<td>Offenlegungs Zusammenfassung</td>
+						<td>
+							&lt;summary&gt; gibt eine Zusammenfassung, Beschriftung oder
+							Legende für das Offenlegungsfeld eines Elements an.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</section>
+
+		<!--  Liste:  ----------------------------------------->
+		<section
+			class="liste"
+			id="liste"
+		>
+
+			<h2>Liste:</h2>
+
+			<table width="100%">
+				<thead>
+					<tr>
+						<th width="20%">
+							Tag:
+						</th>
+
+						<th width="20%">
+							Bezeichnung:
+						</th>
+
+						<th width="50%">
+							Beschreibung:
+						</th>
+
+						<th width="10%">
+							Link:
+						</th>
+					</tr>
+				</thead>
+
+				<tbody>
+
+					<!--  Beschreibungsdetails: -->
+					<tr class="dd">
+						<td>
+							<code>
+								&lt;dd&gt;
+							</code>
+						</td>
+						<td>Beschreibungsdetails</td>
+						<td>
+							&lt;dd&gt; stellt die Beschreibung, Definition oder den Wert für
+							den vorhergehenden Begriff
+							( &lt;dt&gt; ) in einer Beschreibungsliste ( &lt;dl&gt; ) bereit.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Beschreibungsliste: -->
+					<tr class="dl">
+						<td>
+							<code>
+								&lt;dl&gt;
+							</code>
+						</td>
+						<td>Beschreibungsliste</td>
+						<td>
+							&lt;dl&gt; stellt eine Beschreibungsliste dar.
+							Das Element enthält eine Liste von Begriffsgruppen (durch das
+							&lt;dt&gt; Element angegeben) und Beschreibungen (durch &lt;dd&gt;
+							Elemente
+							bereitgestellt).
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Beschreibungsbegriff: -->
+					<tr class="dt">
+						<td>
+							<code>
+								&lt;dt&gt;
+							</code>
+						</td>
+						<td>Beschreibungsbegriff</td>
+						<td>
+							&lt;dt&gt; gibt einen Begriff in einer Beschreibung oder
+							Definitionsliste an und muss als solcher innerhalb eines
+							&lt;dl&gt; Elements verwendet werden.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Listeneintrag: -->
+					<tr class="li">
+						<td>
+							<code>
+								&lt;li&gt;
+							</code>
+						</td>
+						<td>Listeneintrag</td>
+						<td>
+							&lt;li&gt; wird verwendet, um ein Element in einer Liste
+							darzustellen.
+							Es muss in einem übergeordneten Element enthalten sein: einer
+							geordneten Liste (&lt;ol&gt;), einer ungeordneten Liste
+							(&lt;ul&gt;) oder einem Menü (&lt;menu&gt;).
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Menü: -->
+					<tr class="menu">
+						<td>
+							<code>
+								&lt;menu&gt;
+							</code>
+						</td>
+						<td>Menü</td>
+						<td>
+							&lt;menu&gt; wird in der HTML-Spezifikation als semantische
+							Alternative zu (&lt;ul&gt;) beschrieben, von Browsern jedoch nicht
+							anders behandelt.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Geordnete Liste: -->
+					<tr class="ol">
+						<td>
+							<code>
+								&lt;ol&gt;
+							</code>
+						</td>
+						<td>Geordnete Liste</td>
+						<td>
+							&lt;ol&gt; stellt eine geordnete Liste von Elementen dar –
+							normalerweise dargestellt als nummerierte Liste.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Ungeordnete Liste: -->
+					<tr class="ul">
+						<td>
+							<code>
+								&lt;ul&gt;
+							</code>
+						</td>
+						<td>Ungeordnete Liste</td>
+						<td>
+							&lt;ul&gt; stellt eine ungeordnete Liste von Elementen dar, die
+							normalerweise als Aufzählungsliste dargestellt wird.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+
+
+
+
+
+
+
+				</tbody>
+			</table>
+		</section>
+
+		<!--  Tabelle:  ----------------------------------------->
+		<section
+			class="tabelle"
+			id="tabelle"
+		>
+
+			<h2>Tabelle:</h2>
+
+			<table width="100%">
+				<thead>
+					<tr>
+						<th width="20%">
+							Tag:
+						</th>
+
+						<th width="20%">
+							Bezeichnung:
+						</th>
+
+						<th width="50%">
+							Beschreibung:
+						</th>
+
+						<th width="10%">
+							Link:
+						</th>
+					</tr>
+				</thead>
+
+				<tbody>
+
+					<!--  Tabelle - Beschriftung: -->
+					<tr class="caption">
+						<td>
+							<code>
+								&lt;caption&gt;
+							</code>
+						</td>
+						<td>Tabellenbeschriftung</td>
+						<td>
+							&lt;caption&gt; gibt die Beschriftung (oder den Titel) einer
+							Tabelle an.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Tabellenspalte: -->
+					<tr class="col">
+						<td>
+							<code>
+								&lt;col&gt;
+							</code>
+						</td>
+						<td>Tabellenspalte</td>
+						<td>
+							&lt;col&gt; definiert eine Spalte innerhalb einer Tabelle und wird
+							zum Definieren einer gemeinsamen Semantik für alle gemeinsamen
+							Zellen verwendet.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Tabellen - Spaltengruppe: -->
+					<tr class="colgroup">
+						<td>
+							<code>
+								&lt;colgroup&gt;
+							</code>
+						</td>
+						<td>Spaltengruppe</td>
+						<td>
+							&lt;colgroup&gt; definiert eine Gruppe von Spalten innerhalb einer
+							Tabelle.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Tabelle - Container: -->
+					<tr class="table">
+						<td>
+							<code>
+								&lt;table&gt;
+							</code>
+						</td>
+						<td>Container - Tabelle</td>
+						<td>
+							&lt;table&gt; stellt tabellarische Daten dar, die in einer
+							zweidimensionalen Tabelle dargestellt werden.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Hauptbereich: -->
+					<tr class="tbody">
+						<td>
+							<code>
+								&lt;tbody&gt;
+							</code>
+						</td>
+						<td>Hauptbereich</td>
+						<td>
+							&lt;tbody&gt; kapselt eine Reihe von Tabellenzeilen ein und gibt
+							an, dass sie den Hauptteil der Tabelle bilden.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Tabelle - Datenzelle: -->
+					<tr class="td">
+						<td>
+							<code>
+								&lt;td&gt;
+							</code>
+						</td>
+						<td>Datenzelle</td>
+						<td>
+							&lt;td&gt; definiert eine Zelle einer Tabelle, die Daten enthält.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Tabelle - Fußbereich: -->
+					<tr class="tfoot">
+						<td>
+							<code>
+								&lt;tfoot&gt;
+							</code>
+						</td>
+						<td>Fußbereich</td>
+						<td>
+							&lt;tfoot&gt; definiert eine Reihe von Zeilen, die die Spalten der
+							Tabelle zusammenfassen.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Tabelle - Überschriftzelle: -->
+					<tr class="th">
+						<td>
+							<code>
+								&lt;th&gt;
+							</code>
+						</td>
+						<td>Überschriftzelle</td>
+						<td>
+							&lt;th&gt; definiert eine Zelle als Kopfzeile einer Gruppe von
+							Tabellenzellen.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Tabelle - Kopfbereich: -->
+					<tr class="thead">
+						<td>
+							<code>
+								&lt;thead&gt;
+							</code>
+						</td>
+						<td>Kopfbereich</td>
+						<td>
+							&lt;thead&gt; definiert eine Reihe von Zeilen, die den Kopf der
+							Spalten der Tabelle definieren.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Tabellereihe: -->
+					<tr class="tr">
+						<td>
+							<code>
+								&lt;tr&gt;
+							</code>
+						</td>
+						<td>Tabellereihe</td>
+						<td>
+							&lt;tr&gt; definiert eine Reihe von Zellen in einer Tabelle.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</section>
+
+		<!--  Formular:  ----------------------------------------->
+		<section
+			class="formular"
+			id="formular"
+		>
+
+			<h2>Formular:</h2>
+
+			<table width="100%">
+				<thead>
+					<tr>
+						<th width="20%">
+							Tag:
+						</th>
+
+						<th width="20%">
+							Bezeichnung:
+						</th>
+
+						<th width="50%">
+							Beschreibung:
+						</th>
+
+						<th width="10%">
+							Link:
+						</th>
+					</tr>
+				</thead>
+
+				<tbody>
+
+					<!--  Formular - Drückknopf: -->
+					<tr class="button">
+						<td>
+							<code>
+								&lt;button&gt;
+							</code>
+						</td>
+						<td>Drückknopf</td>
+						<td>
+							&lt;button&gt; ist ein interaktives Element, das von einem
+							Benutzer aktiviert wird.
+							Sobald es aktiviert ist, führt es eine Aktion aus, beispielsweise
+							das Absenden eines Formulars oder das Öffnen eines Dialogs.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Formular - Datenliste: -->
+					<tr class="datalist">
+						<td>
+							<code>
+								&lt;datalist&gt;
+							</code>
+						</td>
+						<td>Datenliste</td>
+						<td>
+							&lt;datalist&gt; enthält eine Reihe von &lt;option&gt; Elementen,
+							die die zulässigen oder empfohlenen Optionen darstellen, die in
+							anderen Steuerelementen zur Auswahl stehen.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Media - Externer Inhalt: -->
+					<tr class="embed">
+						<td>
+							<code>
+								&lt;embed&gt;
+							</code>
+						</td>
+						<td>Externer Inhalt</td>
+						<td>
+							&lt;embed&gt; bettet externe Inhalte an der angegebenen Stelle im
+							Dokument ein.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Formular - Feldsatz: -->
+					<tr class="tag">
+						<td>
+							<code>
+								&lt;fieldset&gt;
+							</code>
+						</td>
+						<td>fieldset</td>
+						<td>
+							&lt;fieldset&gt; wird verwendet, um mehrere Steuerelemente sowie
+							Beschriftungen (&lt;label&gt;) innerhalb eines Webformulars zu
+							gruppieren.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Container - Formular: -->
+					<tr class="form">
+						<td>
+							<code>
+								&lt;form&gt;
+							</code>
+						</td>
+						<td>Container - Formular</td>
+						<td>
+							&lt;form&gt; stellt einen Dokumentabschnitt dar, der interaktive
+							Steuerelemente zum Übermitteln von Informationen enthält.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Formular - Eingabe: -->
+					<tr class="input">
+						<td>
+							<code>
+								&lt;input&gt;
+							</code>
+						</td>
+						<td>Eingabe</td>
+						<td>
+							&lt;input&gt; wird verwendet, um interaktive Steuerelemente für
+							webbasierte Formulare zu erstellen, um Daten vom Benutzer zu
+							akzeptieren.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Formular - Beschriftung: -->
+					<tr class="label">
+						<td>
+							<code>
+								&lt;label&gt;
+							</code>
+						</td>
+						<td>Beschriftung</td>
+						<td>
+							&lt;label&gt; stellt eine Beschriftung für ein Element in einer
+							Benutzeroberfläche dar.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Formular - Feldsatz-Beschriftung: -->
+					<tr class="legend">
+						<td>
+							<code>
+								&lt;legend&gt;
+							</code>
+						</td>
+						<td>Feldsatz-Beschriftung</td>
+						<td>
+							&lt;legend&gt; stellt eine Beschriftung für den Inhalt seines
+							übergeordneten &lt;fieldset&gt; Elements dar.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Formular - Optionsgruppe: -->
+					<tr class="optgroup">
+						<td>
+							<code>
+								&lt;optgroup&gt;
+							</code>
+						</td>
+						<td>Optionsgruppe</td>
+						<td>
+							&lt;optgroup&gt; erstellt eine Gruppierung von Optionen innerhalb
+							eines &lt;select&gt; Elements.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Formular - Option: -->
+					<tr class="option">
+						<td>
+							<code>
+								&lt;option&gt;
+							</code>
+						</td>
+						<td>Option</td>
+						<td>
+							&lt;option&gt; wird verwendet, um ein Element zu definieren, das
+							in einem &lt;select&gt;, einem &lt;optgroup&gt; oder einem
+							&lt;datalist&gt; Element enthalten ist.
+							Als solche können Menüelemente in Popups und andere Elementlisten
+							in einem HTML-Dokument dargestellt werden.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Formular - Ausgabefeld: -->
+					<tr class="output">
+						<td>
+							<code>
+								&lt;output&gt;
+							</code>
+						</td>
+						<td>Ausgabefeld</td>
+						<td>
+							&lt;output&gt; st ein Containerelement, in das eine Site oder App
+							die Ergebnisse einer Berechnung oder das Ergebnis einer
+							Benutzeraktion einfügen kann.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+
+					<!--  Formular - Sucheingabe: -->
+					<tr class="search">
+						<td>
+							<code>
+								&lt;search&gt;
+							</code>
+						</td>
+						<td>Sucheingabe</td>
+						<td>
+							&lt;search&gt; ist ein Container, der die Teile des Dokuments oder
+							der Anwendung mit Formularsteuerelementen oder anderen Inhalten im
+							Zusammenhang mit der Durchführung eines Such- oder Filtervorgangs
+							darstellt.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/search"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Formular - Select: -->
+					<tr class="select">
+						<td>
+							<code>
+								&lt;select&gt;
+							</code>
+						</td>
+						<td>Select</td>
+						<td>
+							&lt;select&gt; stellt ein Steuerelement dar, das ein Menü mit
+							Optionen bereitstellt.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Formular - Eingabefeld: -->
+					<tr class="textarea">
+						<td>
+							<code>
+								&lt;textarea&gt;
+							</code>
+						</td>
+						<td>Eingabefeld</td>
+						<td>
+							&lt;textarea&gt; stellt ein mehrzeiliges Bearbeitungssteuerelement
+							für Klartext dar, das nützlich ist, wenn Sie Benutzern die Eingabe
+							einer größeren Menge Freiformtext ermöglichen möchten,
+							beispielsweise einen Kommentar zu einem Bewertungs- oder
+							Feedbackformular.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</section>
+
+		<!--  Media:  ----------------------------------------->
+		<section
+			class="media"
+			id="media"
+		>
+
+			<h2>Media:</h2>
+
+			<table width="100%">
+				<thead>
+					<tr>
+						<th width="20%">
+							Tag:
+						</th>
+
+						<th width="20%">
+							Bezeichnung:
+						</th>
+
+						<th width="50%">
+							Beschreibung:
+						</th>
+
+						<th width="10%">
+							Link:
+						</th>
+					</tr>
+				</thead>
+
+				<tbody>
+
+					<!--  Media - Bildkartenbereich: -->
+					<tr class="area">
+						<td>
+							<code>
+								&lt;area&gt;
+							</code>
+						</td>
+						<td>Bildkartenbereich</td>
+						<td>
+							&lt;area&gt; definiert einen Bereich innerhalb einer Imagemap, der
+							über vordefinierte anklickbare Bereiche verfügt.
+							Mithilfe einer Bildkarte können geometrische Bereiche auf einem
+							Bild mit Hypertext-Links verknüpft werden
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Media - Audio: -->
+					<tr class="audio">
+						<td>
+							<code>
+								&lt;audio&gt;
+							</code>
+						</td>
+						<td>Audio</td>
+						<td>
+							&lt;audio&gt; wird verwendet, um Soundinhalte in Dokumente
+							einzubetten.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Media - Canvas: -->
+					<tr class="canvas">
+						<td>
+							<code>
+								&lt;canvas&gt;
+							</code>
+						</td>
+						<td>Canvas</td>
+						<td>
+							Verwenden Sie &lt;canvas&gt; entweder mit der Canvas-Skript-API
+							oder der WebGL-API, um Grafiken und Animationen zu zeichnen.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Media - Media-Beschriftung: -->
+					<tr class="figcaption">
+						<td>
+							<code>
+								&lt;figcaption&gt;
+							</code>
+						</td>
+						<td>Media-Beschriftung</td>
+						<td>
+							&lt;figcaption&gt; stellt eine Beschriftung oder Legende dar, die
+							den restlichen Inhalt seines übergeordneten &lt;figure&gt;
+							Elements beschreibt.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Media - Abbildung mit Beschriftungselement: -->
+					<tr class="figure">
+						<td>
+							<code>
+								&lt;figure&gt;
+							</code>
+						</td>
+						<td>Abbildung mit Beschriftungselement</td>
+						<td>
+							&lt;figure&gt; stellt eigenständigen Inhalt dar, möglicherweise
+							mit einer optionalen Beschriftung, die mithilfe des
+							&lt;figcaption&gt; Elements angegeben wird.
+							Die Abbildung, ihre Beschriftung und ihr Inhalt werden als eine
+							Einheit referenziert.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Media - Inline-Frame: -->
+					<tr class="iframe">
+						<td>
+							<code>
+								&lt;iframe&gt;
+							</code>
+						</td>
+						<td>Inline-Frame</td>
+						<td>
+							&lt;iframe&gt; stellt einen verschachtelten Browserkontext dar und
+							bettet eine andere HTML-Seite in die aktuelle ein.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Media - Bild (Inline): -->
+					<tr class="img">
+						<td>
+							<code>
+								&lt;img&gt;
+							</code>
+						</td>
+						<td>Bild (Inline)</td>
+						<td>
+							&lt;img&gt; bettet ein Bild in das Dokument ein.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Media - Image Map: -->
+					<tr class="map">
+						<td>
+							<code>
+								&lt;map&gt;
+							</code>
+						</td>
+						<td>Image Map</td>
+						<td>
+							&lt;map&gt; wird mit Elementen verwendet, um eine Imagemap
+							zu definieren.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Media - Externe Objekt: -->
+					<tr class="object">
+						<td>
+							<code>
+								&lt;object&gt;
+							</code>
+						</td>
+						<td>Externe Objekt</td>
+						<td>
+							&lt;object&gt; stellt eine externe Ressource dar, die als Bild,
+							als verschachtelter Browserkontext oder als von einem Plugin zu
+							verarbeitende Ressource behandelt werden kann.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Media - Bild (Container): -->
+					<tr class="picture">
+						<td>
+							<code>
+								&lt;picture&gt;
+							</code>
+						</td>
+						<td>Bild (Container)</td>
+						<td>
+							&lt;picture&gt; enthält null oder mehr &lt;source&gt; Elemente und
+							ein &lt;img&gt; Element, um alternative Versionen eines Bildes für
+							verschiedene Anzeige-/Geräteszenarien anzubieten.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Medie - Medienquelle: -->
+					<tr class="source">
+						<td>
+							<code>
+								&lt;source&gt;
+							</code>
+						</td>
+						<td>Medienquelle</td>
+						<td>
+							&lt;source&gt; gibt eine oder mehrere Medienressourcen für die
+							Elemente &lt;picture&gt;, &lt;audio&gt; und &lt;video&gt; an.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Medie - Untertitel: -->
+					<tr class="track">
+						<td>
+							<code>
+								&lt;track&gt;
+							</code>
+						</td>
+						<td>Untertitel</td>
+						<td>
+							&lt;track&gt; wird als untergeordnetes Element der Medienelemente
+							&lt;audio&gt; und &lt;video&gt; verwendet.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Medie - Video (Container): -->
+					<tr class="video">
+						<td>
+							<code>
+								&lt;video&gt;
+							</code>
+						</td>
+						<td>Video (Container)</td>
+						<td>
+							&lt;video&gt; bettet einen Mediaplayer in das Dokument ein, der
+							die Videowiedergabe unterstützt.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</section>
+
+		<!--  Unbekannt:  ----------------------------------------->
+		<section
+			class="unbekannt"
+			id="unbekannt"
+		>
+
+			<h2>Mir noch nicht bekannte Tags:</h2>
+
+			<table width="100%">
+				<thead>
+					<tr>
+						<th width="20%">
+							Tag:
+						</th>
+
+						<th width="20%">
+							Bezeichnung:
+						</th>
+
+						<th width="50%">
+							Beschreibung:
+						</th>
+
+						<th width="10%">
+							Link:
+						</th>
+					</tr>
+				</thead>
+
+				<tbody>
+
+					<!--  Bidirektionale Isolate: -->
+					<tr class="bdi">
+						<td>
+							<code>
+								&lt;bdi&gt;
+							</code>
+						</td>
+						<td>Bidirektionale Isolate</td>
+						<td>
+							&lt;bdi&gt; weist den bidirektionalen Algorithmus des Browsers an,
+							den darin enthaltenen Text isoliert vom umgebenden Text zu
+							behandeln.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Daten: -->
+					<tr class="data">
+						<td>
+							<code>
+								&lt;data&gt;
+							</code>
+						</td>
+						<td>Daten</td>
+						<td>
+							&lt;data&gt; verknüpft einen bestimmten Inhalt mit einer
+							maschinenlesbaren Übersetzung.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Dialog: -->
+					<tr class="dialog">
+						<td>
+							<code>
+								&lt;dialog&gt;
+							</code>
+						</td>
+						<td>Dialog</td>
+						<td>
+							&lt;dialog&gt; stellt ein modales oder nichtmodales Dialogfeld
+							oder eine andere interaktive Komponente dar, beispielsweise eine
+							ausschließbare Warnung, einen Inspektor oder ein Unterfenster.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  HTML-Meter: -->
+					<tr class="meter">
+						<td>
+							<code>
+								&lt;meter&gt;
+							</code>
+						</td>
+						<td>HTML - Meter</td>
+						<td>
+							&lt;meter&gt; stellt entweder einen Skalarwert innerhalb eines
+							bekannten Bereichs oder einen Bruchwert dar.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Portal: -->
+					<tr class="portal">
+						<td>
+							<code>
+								&lt;portal&gt;
+							</code>
+						</td>
+						<td>Portal</td>
+						<td>
+							&lt;portal&gt; ermöglicht die Einbettung einer anderen HTML-Seite
+							in die aktuelle Seite, um eine reibungslosere Navigation auf neuen
+							Seiten zu ermöglichen.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/portal"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Progress: -->
+					<tr class="progress">
+						<td>
+							<code>
+								&lt;progress&gt;
+							</code>
+						</td>
+						<td>Progress</td>
+						<td>
+							&lt;progress&gt; zeigt einen Indikator an, der den
+							Abschlussfortschritt einer Aufgabe anzeigt,
+							normalerweise als Fortschrittsbalken.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Ruby (Fallback): -->
+					<tr class="rp">
+						<td>
+							<code>
+								&lt;rp&gt;
+							</code>
+						</td>
+						<td>Ruby (Fallback)</td>
+						<td>
+							&lt;rp&gt; wird verwendet, um Fallback-Klammern für Browser
+							bereitzustellen, die die
+							Anzeige von Ruby-Anmerkungen mithilfe des &lt;ruby&gt; Elements
+							nicht unterstützen.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rp"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Ruby (Text): -->
+					<tr class="rt">
+						<td>
+							<code>
+								&lt;rt&gt;
+							</code>
+						</td>
+						<td>Ruby (Text)</td>
+						<td>
+							&lt;rt&gt; gibt die Ruby-Textkomponente einer Ruby-Annotation an,
+							die zur Bereitstellung von Aussprache-, Übersetzungs- oder
+							Transliterationsinformationen für ostasiatische Typografie
+							verwendet wird.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rt"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Ruby: -->
+					<tr class="ruby">
+						<td>
+							<code>
+								&lt;ruby&gt;
+							</code>
+						</td>
+						<td>Ruby</td>
+						<td>
+							&lt;ruby&gt; stellt kleine Anmerkungen dar, die über, unter oder
+							neben dem Basistext gerendert werden und normalerweise zur
+							Darstellung der Aussprache ostasiatischer Zeichen verwendet
+							werden.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Web Component Slot: -->
+					<tr class="slot">
+						<td>
+							<code>
+								&lt;slot&gt;
+							</code>
+						</td>
+						<td>Web Component Slot</td>
+						<td>
+							&lt;slot&gt; ist ein Platzhalter innerhalb einer Webkomponente,
+							den Sie mit Ihrem eigenen Markup füllen können, wodurch Sie
+							separate DOM-Bäume erstellen und diese gemeinsam präsentieren
+							können.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+					<!--  Inhaltsvorlage: -->
+					<tr class="template">
+						<td>
+							<code>
+								&lt;template&gt;
+							</code>
+						</td>
+						<td>Inhaltsvorlage</td>
+						<td>
+							&lt;template&gt; ist ein Mechanismus zum Speichern von HTML , das
+							beim Laden einer Seite nicht sofort gerendert werden soll, sondern
+							später zur Laufzeit mithilfe von JavaScript instanziiert werden
+							kann.
+						</td>
+						<td>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template"
+								target="_blank"
+							>Mozilla- MDN</a>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</section>
+
+	</main>
+
+	<!--  Footer:  --------------------------------------->
+	<footer>
+		<p>Dies ist ein für mich gedachtes und erstelltes Spickzettel. Alles Inhalte
+			sind ohne Gewähr.</p>
+	</footer>
+
+
+
+
+</body>
+
+</html>
